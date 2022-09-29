@@ -26,7 +26,7 @@ export default function Navbar() {
 
     return (
         <Box mb={7} boxShadow='rgba(0, 0, 0, 0.04) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;'>
-            <Stack w='75%' h={{ lg: '23vh', md: '8vh' }} margin='auto'>
+            <Stack w={{ lg: '75%', md: '90%', sm: '90%' }} h={{ lg: '23vh', md: '8vh' }} margin='auto'>
                 <Flex display={{ lg: 'flex', md: 'none', sm: 'none' }} justifyContent='space-between' alignItems='center' mt={3} mb={2}>
                     <Flex gap='1.2rem' fontSize='0.9rem'>
                         {
