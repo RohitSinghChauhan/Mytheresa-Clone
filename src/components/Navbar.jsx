@@ -1,4 +1,4 @@
-import { Box, Stack, Flex, Text, Spacer, Image, Center } from '@chakra-ui/react';
+import { Box, Stack, Flex, Text, Spacer, Image } from '@chakra-ui/react';
 import { NavLink, Link } from 'react-router-dom';
 import styles from '../modules/navbar.module.css';
 import MenuMd from '../components/MenuMd';
