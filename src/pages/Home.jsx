@@ -1,8 +1,28 @@
-import React from 'react'
-import { Box, Flex, Stack, Text } from '@chakra-ui/react'
+import React, { useEffect, useState } from 'react'
+import { Box, Center, Flex, Stack, Text, Button } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
+import ProductCarousel from '../components/ProductCarousel';
+import axios from 'axios';
+
+const getData = () => {
+    return axios.get(`https://pacific-wildwood-24158.herokuapp.com/clothing`);
+}
 
 const Home = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        getData()
+            .then(res => setData(res.data))
+            .catch(err => console.log(err));
+    }, [])
+
+    // for (let i = 0; i < data.length; i++) {
+    //     if (data[i].category === 'Womens') {
+    //         console.log('Hellcat')
+    //     }
+    // }
+
     return (
         <Box w='75%' margin='auto' mb={12}>
             <Stack spacing={8} >
@@ -27,7 +47,40 @@ const Home = () => {
                     </Flex>
                 </Flex>
             </Stack>
-        </Box>
+
+            <Stack spacing={10} mt={10}>
+                <Box>
+                    <Text color='blackAlpha.800' letterSpacing={1} fontSize={30} mb='2rem' textAlign='center'>Women's New Arrivals</Text>
+                    <ProductCarousel products={data} category='Womens' />
+                    <Center>
+                        <Link to='/women'>
+                            <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
+                        </Link>
+                    </Center>
+                </Box>
+
+                <Box>
+                    <Text color='blackAlpha.800' letterSpacing={1} fontSize={30} mb='2rem' textAlign='center'>Men's New Arrivals</Text>
+                    <ProductCarousel products={data} category='Mens' />
+                    <Center>
+                        <Link to='/men'>
+                            <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
+                        </Link>
+                    </Center>
+                </Box>
+
+                <Box>
+                    <Text color='blackAlpha.800' letterSpacing={1} fontSize={30} mb='2rem' textAlign='center'>Kids's New Arrivals</Text>
+                    <ProductCarousel products={data} category='Child' />
+                    <Center>
+                        <Link to='/kid'>
+                            <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
+                        </Link>
+                    </Center>
+                </Box>
+            </Stack >
+
+        </Box >
     )
 }
 
