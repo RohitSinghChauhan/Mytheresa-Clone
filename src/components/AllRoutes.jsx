@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home';
-import Men from '../pages/Men';
-import Women from '../pages/Women';
-import Kid from '../pages/Kid';
+import Mens from '../pages/Mens';
+import Womens from '../pages/Womens';
+import Kids from '../pages/Kids';
 import Life from '../pages/Life';
 import InvalidPage from '../pages/InvalidPage';
 
@@ -12,9 +12,9 @@ const AllRoutes = () => {
         <>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/men' element={<Men />} />
-                <Route path='/women' element={<Women />} />
-                <Route path='/kid' element={<Kid />} />
+                <Route path='/mens' element={<Mens />} />
+                <Route path='/womens' element={<Womens />} />
+                <Route path='/kids' element={<Kids />} />
                 <Route path='/life' element={<Life />} />
                 <Route path='*' element={<InvalidPage />} />
             </Routes>
