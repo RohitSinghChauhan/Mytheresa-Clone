@@ -21,9 +21,9 @@ export default function MenuMd() {
             />
             <MenuList>
                 <MenuGroup title='Links'>
-                    <MenuItem><Link to='/men'>Men</Link></MenuItem>
-                    <MenuItem><Link to='/women'>Women</Link></MenuItem>
-                    <MenuItem><Link to='/kid'>Kids</Link></MenuItem>
+                    <MenuItem><Link to='/mens'>Men</Link></MenuItem>
+                    <MenuItem><Link to='/womens'>Women</Link></MenuItem>
+                    <MenuItem><Link to='/kids'>Kids</Link></MenuItem>
                     <MenuItem><Link to='/life'>Life</Link></MenuItem>
                 </MenuGroup>
                 <MenuDivider />

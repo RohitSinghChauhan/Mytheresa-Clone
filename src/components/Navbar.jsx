@@ -7,15 +7,15 @@ export default function Navbar() {
 
     const links = [
         {
-            path: '/women',
+            path: '/womens',
             title: "WOMEN"
         },
         {
-            path: '/men',
+            path: '/mens',
             title: "MEN"
         },
         {
-            path: '/kid',
+            path: '/kids',
             title: "KIDS"
         },
         {
