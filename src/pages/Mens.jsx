@@ -18,9 +18,9 @@ const Mens = () => {
     }, [])
 
     return (
-        <Box w='75%' margin='auto' mb={12}>
+        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto' mb={12}>
 
-            <Flex h={{ lg: '71vh', md: '40vh', sm: '40vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
+            <Flex h={{ lg: '71vh', md: '46vh', sm: '46vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
                 <Flex width='100%' justifyContent='center' alignItems='center' direction='column'>
                     <Stack spacing={2}>
                         <Text color='white' textAlign='center' letterSpacing={{ lg: '1', md: '0' }}>UNEARTH YOUR AUTHENTIC STYLE</Text>
