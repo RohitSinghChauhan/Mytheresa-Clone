@@ -19,7 +19,7 @@ const Womens = () => {
 
     return (
         <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto' mb={12}>
-            <Flex h={{ lg: '71vh', md: '40vh', sm: '20vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/Big-desktop-Pre-Fall_Update_1_1x_20220927140512.jpg'}>
+            <Flex h={{ lg: '71vh', md: '48vh', sm: '48vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/WW_Moncler_Bigs/Moncler_MayaJacket_Act_Big_desktop_1_x2_20220928145617.jpg?imwidth=1180&imdensity=1'}>
             </Flex>
 
             <Flex mt='2.4rem' mb='1.6rem' padding='1.8rem 0 1.8rem 0' bgColor='blackAlpha.100' direction='column' justifyContent='space-around' alignItems='center'>
