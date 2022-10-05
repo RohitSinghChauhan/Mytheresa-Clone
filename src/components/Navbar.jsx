@@ -40,10 +40,14 @@ export default function Navbar() {
                         }
                     </Flex>
 
-                    <Flex fontSize='0.75rem' as='b' color='blackAlpha.700' gap='4rem'>
+                    <Flex fontSize='0.75rem' as='b' color='blackAlpha.700' gap='3.5rem'>
                         <Text letterSpacing={1} cursor='pointer'>Signup for Newsletter</Text>
-                        <Text letterSpacing={1} cursor='pointer'>My account</Text>
-                        <Text letterSpacing={1} cursor='pointer'>My wishlist</Text>
+                        <Link to='/signinpage'>
+                            <Text letterSpacing={1} cursor='pointer'>My account</Text>
+                        </Link>
+                        <Link to='/signinpage'>
+                            <Text letterSpacing={1} cursor='pointer'>Sign In</Text>
+                        </Link>
                     </Flex>
                 </Flex>
 
@@ -58,10 +62,14 @@ export default function Navbar() {
                     </Box>
                     <Spacer />
                     <Flex gap={2} alignItems='center' cursor='pointer'>
-                        <Text display={{ lg: 'inline-block', md: 'none', sm: 'none' }} fontSize='0.9rem'>SHOPPING BAG</Text>
-                        <Box>
-                            <Image h={{ lg: '4.7vh', md: '4vh', sm: '4vh' }} src='https://img.icons8.com/ios/2x/shopping-bag--v3.png' />
-                        </Box>
+                        <Link to='/shoppingcart'>
+                            <Text display={{ lg: 'inline-block', md: 'none', sm: 'none' }} fontSize='0.9rem'>SHOPPING BAG</Text>
+                        </Link>
+                        <Link to='/shoppingcart'>
+                            <Box>
+                                <Image h={{ lg: '4.7vh', md: '4vh', sm: '4vh' }} src='https://img.icons8.com/ios/2x/shopping-bag--v3.png' />
+                            </Box>
+                        </Link>
                     </Flex>
                 </Flex>
                 <Spacer />

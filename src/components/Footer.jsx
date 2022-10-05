@@ -2,7 +2,7 @@ import { Box, Stack, Input, GridItem, Text, Flex, Button, SimpleGrid, Divider, I
 import { AiFillLinkedin, AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 
 function Footer() {
-    return (<Box w={{ lg: '75%', md: '90%', sm: '90%' }} margin='auto'>
+    return (<Box w={{ lg: '75%', md: '90%', sm: '90%' }} margin='auto' mt='9rem'>
 
         <Divider mb={{ lg: '7', md: '3', sm: '3' }} />
 

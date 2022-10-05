@@ -5,7 +5,7 @@ import ProductCarousel from '../components/ProductCarousel'
 import axios from 'axios'
 
 const getData = () => {
-    return axios.get(`https://pacific-wildwood-24158.herokuapp.com/clothing`);
+    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`);
 }
 
 const Womens = () => {
@@ -18,15 +18,19 @@ const Womens = () => {
     }, [])
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto' mb={12}>
-            <Flex h={{ lg: '71vh', md: '48vh', sm: '48vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/WW_Moncler_Bigs/Moncler_MayaJacket_Act_Big_desktop_1_x2_20220928145617.jpg?imwidth=1180&imdensity=1'}>
-            </Flex>
+        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
+            <Link to='/womenproducts'>
+                <Flex h={{ lg: '71vh', md: '48vh', sm: '48vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/WW_Moncler_Bigs/Moncler_MayaJacket_Act_Big_desktop_1_x2_20220928145617.jpg?imwidth=1180&imdensity=1'}>
+                </Flex>
+            </Link>
 
             <Flex mt='2.4rem' mb='1.6rem' padding='1.8rem 0 1.8rem 0' bgColor='blackAlpha.100' direction='column' justifyContent='space-around' alignItems='center'>
                 <Text fontSize='1rem' wordSpacing={1}>DON'T MISS OUT</Text>
                 <Text fontSize='2.2rem' fontWeight='400'>New Arrivals</Text>
                 <Text color='gray' fontSize='1.1rem'>McCartney, Moncler, Loewe, Oseree</Text>
-                <Button colorScheme='black' maxW={{ lg: '7vw', md: '11vw', sm: '12vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='black' borderRadius='none' color='white' mt='1.6rem' w='10vw'>SHOP NOW</Button>
+                <Link to='/womenproducts'>
+                    <Button colorScheme='black' maxW={{ lg: '7vw', md: '11vw', sm: '12vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='black' borderRadius='none' color='white' mt='1.6rem' w='10vw'>SHOP NOW</Button>
+                </Link>
             </Flex>
 
             <Box>
@@ -52,7 +56,9 @@ const Womens = () => {
                     <GridItem>
                         <Image src='https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW39/CW39_ActboxSmall_2x__20220926130949.jpg?imwidth=600&imdensity=1' alt='one' />
                         <Flex borderBottom='1px solid gray' h={{ lg: '15vh', md: '10vh', sm: '10vh' }} direction='column' justifyContent='center' alignItems='center'>
-                            <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                            <Link to='/womenproducts'>
+                                <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                            </Link>
                         </Flex>
                     </GridItem>
 
@@ -69,10 +75,15 @@ const Womens = () => {
 
                 <Flex borderBottom='1px solid black' h={{ lg: '18vh', md: '25vh' }} justifyContent='space-around' alignItems='center'>
                     <Flex mt={{ lg: '0', md: '5rem' }}>
-                        <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                        <Link to='/womenproducts'>
+                            <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                        </Link>
                     </Flex>
                     <Flex mt={{ lg: '0', md: '5rem' }}>
-                        <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                        <Link to='/womenproducts'>
+
+                            <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '9vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '11' }} bgColor='blackAlpha.800' borderRadius='none' color='white' w='10vw'>SHOP NOW</Button>
+                        </Link>
                     </Flex>
                 </Flex>
             </Box>
@@ -83,9 +94,9 @@ const Womens = () => {
                     <Text fontSize={{ lg: '2.1rem', md: '1.2rem', sm: '1.5rem' }} textAlign='center'>Pieces to wear with everything, everywhere</Text>
                 </Stack>
                 <Box mb={{ lg: '2.3rem', md: '0.8rem', sm: '0.8rem' }}></Box>
-                <ProductCarousel products={data} category='Womens' />
+                <ProductCarousel products={data} category='women' />
                 <Center>
-                    <Link to='/mens'>
+                    <Link to='/womenProducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
                     </Link>
                 </Center>

@@ -4,12 +4,18 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthContextProvider } from './context/AuthContext/AuthContext';
+import { CartContextProvider } from './context/CartContext/CartContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
-      <App />
+      <AuthContextProvider>
+        <CartContextProvider>
+          <App />
+        </CartContextProvider>
+      </AuthContextProvider>
     </BrowserRouter>
   </ChakraProvider>
 );

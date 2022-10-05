@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Box, Flex, Text, Button, Stack, Center, SimpleGrid } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
 import ProductCarousel from '../components/ProductCarousel'
+import MenCarousel1 from '../components/MenCarousel1'
+import MenCarousel2 from '../components/MenCarousel2'
 import axios from 'axios'
 
 const getData = () => {
-    return axios.get(`https://pacific-wildwood-24158.herokuapp.com/clothing`);
+    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`);
 }
 
 const Mens = () => {
@@ -18,7 +20,7 @@ const Mens = () => {
     }, [])
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto' mb={12}>
+        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
 
             <Flex h={{ lg: '71vh', md: '46vh', sm: '46vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
                 <Flex width='100%' justifyContent='center' alignItems='center' direction='column'>
@@ -26,7 +28,7 @@ const Mens = () => {
                         <Text color='white' textAlign='center' letterSpacing={{ lg: '1', md: '0' }}>UNEARTH YOUR AUTHENTIC STYLE</Text>
                         <Text color='white' fontSize={{ lg: '55', md: '35', sm: '33' }} textAlign='center'>Pre-Fall 2022</Text>
                     </Stack>
-                    <Link to='/kid'>
+                    <Link to='/menproducts'>
                         <Button colorScheme='white' bgColor='white' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} borderRadius='none' color='blackAlpha.800' mt='1.2rem' fontWeight='none' w='20vw'>SHOP NOW</Button>
                     </Link>
                 </Flex>
@@ -34,9 +36,9 @@ const Mens = () => {
 
             <Box mt='2rem' mb={12}>
                 <Text color='blackAlpha.800' letterSpacing={1} fontSize={30} mb='3rem' textAlign='center'>New Arrivals</Text>
-                <ProductCarousel products={data} category='Mens' />
+                <ProductCarousel products={data} category='men' />
                 <Center>
-                    <Link to='/mens'>
+                    <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
                     </Link>
                 </Center>
@@ -54,7 +56,9 @@ const Mens = () => {
                                 <Text fontSize={16}>Add a fresh coat to your cold-weather edit with tailored styles</Text>
                                 <Text fontSize={16}>taking bold shape</Text>
                             </Box>
-                            <Button colorScheme='gray' bgColor='white' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} borderRadius='none' color='blackAlpha.800' mt='1.2rem' fontWeight='none' w='25vw'>SHOP NOW</Button>
+                            <Link to='/menproducts'>
+                                <Button colorScheme='gray' bgColor='white' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} borderRadius='none' color='blackAlpha.800' mt='1.2rem' fontWeight='none' w='25vw'>SHOP NOW</Button>
+                            </Link>
                         </Stack>
                     </Stack>
                 </Flex>
@@ -63,9 +67,9 @@ const Mens = () => {
             </SimpleGrid>
 
             <Box mt='2rem' mb={12} pt={5}>
-                <ProductCarousel products={data} category='Mens' />
+                <MenCarousel1 products={data} category='men' />
                 <Center>
-                    <Link to='/mens'>
+                    <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
                     </Link>
                 </Center>
@@ -84,16 +88,18 @@ const Mens = () => {
                                 <Text fontSize={16}>Experiment with a cool-toned palatette of neutrals to evoke</Text>
                                 <Text fontSize={16}>composure in any weather</Text>
                             </Box>
-                            <Button colorScheme='gray' bgColor='white' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} borderRadius='none' color='blackAlpha.800' mt='1.2rem' fontWeight='none' w='25vw'>SHOP NOW</Button>
+                            <Link to='/menproducts'>
+                                <Button colorScheme='gray' bgColor='white' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} borderRadius='none' color='blackAlpha.800' mt='1.2rem' fontWeight='none' w='25vw'>SHOP NOW</Button>
+                            </Link>
                         </Stack>
                     </Stack>
                 </Flex>
             </SimpleGrid>
 
             <Box mt='2rem' mb={12} pt={5}>
-                <ProductCarousel products={data} category='Mens' />
+                <MenCarousel2 products={data} category='men' />
                 <Center>
-                    <Link to='/mens'>
+                    <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '9vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' w='10vw'>VIEW ALL</Button>
                     </Link>
                 </Center>
