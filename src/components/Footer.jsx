@@ -1,96 +1,93 @@
-import { Box, Stack, Input, GridItem, Text, Flex, Button, SimpleGrid, Divider, Image, Center } from "@chakra-ui/react";
+import { Box, Stack, Input, GridItem, Text, Flex, Button, SimpleGrid, Divider, Image } from "@chakra-ui/react";
 import { AiFillLinkedin, AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiFillYoutube } from 'react-icons/ai';
 
 function Footer() {
-    return (<Box w={{ lg: '75%', md: '90%', sm: '90%' }} margin='auto' mt='9rem'>
+    return (<Box w={{ base: '100%', lg: '100%', md: '100%', sm: '100%' }} margin='auto' mt={['1rem', '1rem', '1rem', '2rem']}>
 
         <Divider mb={{ lg: '7', md: '3', sm: '3' }} />
 
-        <Stack justifyContent='center' alignItems='center'>
-            <Text>SHOP WHENEVER, WHEREVER WITH THE APP</Text>
-            <Center>
-                <Image w={{ lg: '15vw', md: '23vw', sm: '22vw' }} cursor='pointer' src='https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png' alt='downloadable' />
-            </Center>
+        <Stack justifyContent='center' alignItems='center' mb={{ base: '1rem', sm: '1.9rem', md: '1.7rem' }}>
+            <Text fontSize={['12', '15', '15', '17']}>SHOP WHENEVER, WHEREVER WITH THE APP</Text>
+            <Image w={{ base: '80vw', lg: '35vw', md: '23vw', sm: '50vw' }} cursor='pointer' src='https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png' alt='downloadable' />
         </Stack>
 
         <Divider mt={{ lg: '7', md: '3', sm: '3' }} mb={2} />
 
-        <SimpleGrid columns={{ lg: '4', md: '1', sm: '1' }} spacing={70}>
-            <GridItem display={{ lg: 'inline-block', md: 'none', sm: 'none' }}>
+        <SimpleGrid columns={{ base: '1', lg: '3', md: '1', sm: '1' }} spacing={['6', '70', '70', '70']} m='auto' w={{ base: '80%' }}>
+            <GridItem width={{ lg: '20vw', md: 'full', sm: 'full' }} display={{ lg: 'inline-block', md: 'none', sm: 'none' }}>
                 <Stack spacing={3}>
-                    <Text>SERVICE & SECURITY</Text>
-                    <Stack spacing={3}>
+                    <Text fontSize={{ base: '14' }}>SERVICE & SECURITY</Text>
+                    <Stack spacing={3} fontSize={{ base: '14' }}>
                         <Box>
                             <Text as='b'>Fast delivery</Text>
-                            <Text color='gray' fontSize={15}>Delivery within 2 business days</Text>
+                            <Text color='gray'>Delivery within 2 business days</Text>
                         </Box>
                         <Box>
                             <Text as='b'>Free returns within 30 days</Text>
-                            <Text color='gray' fontSize={15}>Convenient return service</Text>
+                            <Text color='gray'>Convenient return service</Text>
                         </Box>
                         <Box>
                             <Text as='b'>Secure payment and data protection</Text>
-                            <Text color='gray' fontSize={15}>SSL enccryption for secure transactions and personal data</Text>
+                            <Text color='gray'>SSL enccryption for secure transactions and personal data</Text>
                         </Box>
                     </Stack>
                 </Stack>
             </GridItem>
 
-            <GridItem width='30vw' ms={20} display={{ lg: 'inline-block', md: 'none', sm: 'none' }}>
+            <GridItem width={{ lg: '30vw', md: 'full', sm: 'full' }} mb={{ base: '-1rem' }} display={{ lg: 'inline-block', md: 'none', sm: 'none' }}>
                 <Stack spacing={1}>
-                    <Box>
-                        <Text>CUSTOMER</Text>
-                        <Text>CARE</Text>
+                    <Box fontSize={{ base: '13' }}>
+                        <Text as='b'>CUSTOMER </Text>
+                        <Text as='b'>CARE</Text>
                     </Box>
-                    <Stack spacing={1} color='gray'>
-                        <Text fontSize={17}>Contact us</Text>
-                        <Text fontSize={17}>Shipping information</Text>
-                        <Text fontSize={17}>Secure payment</Text>
-                        <Text fontSize={17}>Exchanges</Text>
-                        <Text fontSize={17}>Returns</Text>
-                        <Text fontSize={17}>After sale service</Text>
-                        <Text fontSize={17}>Gift card</Text>
+                    <Stack spacing={1} fontSize={['13', '13', '16', '16']} color='gray'>
+                        <Text>Contact us</Text>
+                        <Text>Shipping information</Text>
+                        <Text>Secure payment</Text>
+                        <Text>Exchanges</Text>
+                        <Text>Returns</Text>
+                        <Text>After sale service</Text>
+                        <Text>Gift card</Text>
                     </Stack>
                 </Stack>
             </GridItem>
 
-            <GridItem width={{ lg: '30vw', md: 'full', sm: 'full' }} ml={{ lg: '12', md: '0', sm: '0' }} margin={{ lg: 'none', md: 'auto', sm: 'auto' }}>
-                <Stack spacing={6} direction={{ lg: 'column', md: 'row' }}>
-                    <Stack spacing={3}>
-                        <Text w={{ lg: '', md: '36vw', sm: '32vw' }}>GET TREND UPDATES, STYLE TIPS AND MORE</Text>
-                        <Flex w={{ lg: '', md: '36vw', sm: '32vw' }}>
-                            <Input w='26vw' borderRadius='none' placeholder="Your email address here" />
-                            <Button borderRadius='none' fontFamily='monospace' fontWeight='0'>SIGN UP</Button>
+            <GridItem width={{ lg: '30vw', md: 'full', sm: 'full' }} alignItems='center' margin={{ lg: 'none', md: 'auto', sm: 'auto' }}>
+                <Stack spacing={['4', '4', '6', '6']} justifyContent='space-around' direction={{ base: 'column', sm: 'row', lg: 'column', md: 'row' }}>
+                    <Stack spacing={0} w='100%' display={{ base: 'none' }}>
+                        <Text w={{ lg: '', md: '36vw', sm: '34vw' }}>GET TREND UPDATES, STYLE TIPS AND MORE</Text>
+                        <Flex w={{ base: '70vw', lg: '', md: '33vw', sm: '37vw' }}>
+                            <Input h='4vh' w={['100%', '26vw', '26vw', '26vw']} borderRadius='none' placeholder="Your email address" />
+                            <Button h='4vh' borderRadius='none' fontFamily='monospace' fontWeight='0'>SIGN UP</Button>
                         </Flex>
                     </Stack>
 
-                    <Stack spacing={0}>
+                    <Stack spacing={3} display={{ base: 'none' }}>
                         <Text as='b'>Wish list</Text>
                         <Text color='gray'>Receive personal notifications</Text>
                     </Stack>
 
                     <Stack>
-                        <Text as='b'>Follow us on</Text>
+                        <Text fontWeight={{ sm: '600' }} fontSize={{ sm: '1.6rem' }}>Follow us on</Text>
                         <Flex gap={2} cursor='pointer'>
-                            <AiFillLinkedin />
-                            <AiFillFacebook />
-                            <AiFillTwitterSquare />
-                            <AiFillInstagram />
-                            <AiFillYoutube />
+                            <AiFillLinkedin size='1.5rem' />
+                            <AiFillFacebook size='1.5rem' />
+                            <AiFillTwitterSquare size='1.5rem' />
+                            <AiFillInstagram size='1.5rem' />
+                            <AiFillYoutube size='1.5rem' />
                         </Flex>
                     </Stack>
                 </Stack>
             </GridItem>
         </SimpleGrid>
 
-        <Divider mt={{ lg: '7', md: '3', sm: '3' }} mb={3} />
+        <Divider mt={{ base: '1rem', lg: '7', md: '3', sm: '3' }} mb={1} />
 
-        <Flex mb={1} justifyContent='space-between' alignItems='center'>
-            <Text color='gray'>copyright © 2006-2022 mytheresa.com</Text>
-            <Flex gap={3}>
-                <Text color='gray'>Terms of use</Text>
-                <Text color='gray'>Privacy policy</Text>
-                <Text color='gray'>Imprint</Text>
+        <Flex w='100%' fontFamily='monospace' fontSize={['.5rem', '.9rem', '.9rem', '1efrem']} justifyContent={['space-around', 'space-around', 'space-around', 'space-around']} alignItems='center'>
+            <Text color='black'>copyright © 2006-2022 mytheresa.com</Text>
+            <Flex gap={{ base: '1', lg: '4', md: '3', sm: '3' }} color='black'>
+                <Text>Terms of use</Text>
+                <Text>Privacy policy</Text>
             </Flex>
         </Flex>
     </Box >

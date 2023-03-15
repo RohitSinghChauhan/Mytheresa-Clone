@@ -19,8 +19,8 @@ const Home = () => {
 
     return (
         <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
-            <Stack spacing={8} >
-                <Flex h={{ lg: '78vh', md: '50vh', sm: '40vh' }} w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_TAB_2x_20220908102602.jpg?imwidth=1024&imdensity=1'}>
+            <Stack spacing={['1', '1', '8', '8']} >
+                <Flex h={{ base: '27vh', lg: '78vh', md: '70vh', sm: '40vh' }} w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_TAB_2x_20220908102602.jpg?imwidth=1024&imdensity=1'}>
                     <Flex width='50%' justifyContent='center' alignItems='center'>
                         <Link to='/womens'><Text color='white' fontSize={{ lg: '3.6rem', md: '2rem', sm: '2rem' }} fontWeight='none'>Women</Text></Link>
                     </Flex>
@@ -29,15 +29,15 @@ const Home = () => {
                     </Flex>
                 </Flex>
 
-                <Flex h={{ lg: '47vh', md: '22.5vh', sm: '22vh' }} w={{ lg: '100%', md: '100%' }} backgroundPosition='center' backgroundSize={{ lg: 'cover', md: 'cover' }} backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1'}>
+                <Flex h={{ base: '27vh', lg: '52vh', md: '45vh', sm: '41vh' }} w={{ lg: '100%', md: '100%' }} backgroundPosition='center' backgroundSize={{ base: 'cover', sm: 'cover', lg: 'cover', md: 'cover' }} backgroundImage={{ base: 'https://images.unsplash.com/photo-1607453998774-d533f65dac99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2lkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60https://images.unsplash.com/photo-1607453998774-d533f65dac99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2lkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60', sm: 'https://images.unsplash.com/photo-1607453998774-d533f65dac99?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2lkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60', lg: 'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1', md: 'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_KIDS_DSK_2x_20220908102616.jpg?imwidth=1180&imdensity=1' }}>
                     <Flex width='100%' justifyContent='center' alignItems='center'>
-                        <Link to='/kids'><Text color='white' fontSize={{ lg: '4rem', md: '2rem', sm: '2rem' }} fontWeight='none'>Kids</Text></Link>
+                        <Link to='/kids'><Text color='white' fontSize={{ base: '2rem', lg: '4rem', md: '2rem', sm: '2rem' }} fontWeight='none'>Kids</Text></Link>
                     </Flex>
                 </Flex>
 
-                <Flex h={{ lg: '47vh', md: '22.5vh', sm: '22vh' }} w='100%' backgroundPosition='center' backgroundSize={{ lg: 'cover', md: 'cover' }} backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_LIFE_DSK_2x_20220908102608.jpg?imwidth=1180&imdensity=1'}>
+                <Flex h={{ base: '25vh', lg: '50vh', md: '45vh', sm: '40vh' }} w={{ lg: '100%', md: '100%' }} backgroundPosition={{ lg: 'center' }} backgroundSize={{ base: 'cover', sm: 'cover', lg: 'cover', md: 'cover' }} backgroundImage={{ base: 'https://plus.unsplash.com/premium_photo-1675986842336-a1162f4c788b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8a2lkc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60', md: 'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_LIFE_DSK_2x_20220908102608.jpg?imwidth=1180&imdensity=1', lg: 'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_LIFE_DSK_2x_20220908102608.jpg?imwidth=1180&imdensity=1' }}>
                     <Flex width='100%' justifyContent='center' alignItems='center'>
-                        <Link to='/life'><Text color='white' fontSize={{ lg: '4rem', md: '2rem', sm: '2rem' }} fontWeight='none'>Life</Text></Link>
+                        <Link to='/life'><Text color='white' fontSize={{ base: '2rem', lg: '4rem', md: '2rem', sm: '2rem' }} fontWeight='none'>Life</Text></Link>
                     </Flex>
                 </Flex>
             </Stack>
