@@ -58,7 +58,7 @@ export default function Navbar() {
                     <Spacer display={['none', 'none', 'none', 'inline-block']} />
                     <Box pl={{ lg: '8rem', md: '0', sm: '0' }}>
                         <Link to='/'>
-                            <Image w={['24vw', '22vw', '18vw', '18vw']} cursor='pointer' src='https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220906T141618' alt='mytheresa' />
+                            <Image w={['40vw', '22vw', '18vw', '18vw']} cursor='pointer' src='https://www.mytheresa.com/skin/frontend/mytheresa/default/images/logo.png?v=20220906T141618' alt='mytheresa' />
                         </Link>
                     </Box>
                     <Spacer display={['none', 'none', 'none', 'inline-block']} />
