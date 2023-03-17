@@ -26,7 +26,7 @@ const Womens = () => {
 
             <Flex mt={['.9rem', '2.4rem', '2.4rem', '2.4rem']} mb={['.8rem', '1.6rem', '1.6rem', '1.6rem']} padding='1.8rem 0 1.8rem 0' bgColor='blackAlpha.100' direction='column' justifyContent='space-around' alignItems='center'>
                 <Text fontSize={['1rem', '1rem', '1rem', '1.5rem']} wordSpacing={1}>DON'T MISS OUT</Text>
-                <Text fontSize={['1.7rem', '2.2rem', '2.2rem', '4.8rem']} fontWeight='400'>New Arrivals</Text>
+                <Text fontSize={['1.7rem', '2.2rem', '2.2rem', '4.7rem']} fontWeight='400'>New Arrivals</Text>
                 <Text color='gray' fontSize={['1rem', '1.1rem', '1.1rem', '1.1rem']}>McCartney, Moncler, Loewe, Oseree</Text>
                 <Link to='/womenproducts'>
                     <Button mt={['1.2rem', '1rem', '1rem', '1.2rem']} colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '14vw', base: '47vw' }} h={8} fontSize={{ base: '12', lg: '14', md: '11', sm: '12' }} bgColor='blackAlpha.800' borderRadius='none' color='white'>SHOP NOW</Button>
@@ -41,16 +41,16 @@ const Womens = () => {
                             <Text textAlign='center' fontSize={{ lg: '1.8rem', md: '1.2rem', sm: '1.3rem', base: '1.1rem' }}>Your down-the-aisle outfit is ready for you</Text>
                         </Box>
                     </Flex>
-                    <Flex direction='column' display={{ base: 'none' }} alignItems='center'>
-                        <Text fontSize='0.9rem'>A WARM WELCOME</Text>
+                    <Flex direction='column' display={{ base: 'none', sm: 'none', md: 'inline-block', lg: 'inline-block' }} alignItems='center'>
+                        <Text fontSize='0.9rem' textAlign='center'>A WARM WELCOME</Text>
                         <Box w={{ lg: '30vw', md: '24vw' }}>
                             <Text textAlign='center' fontSize={{ lg: '1.8rem', md: '1.2rem', sm: '1.3rem' }}>To your favorite coats of the new season</Text>
                         </Box>
                     </Flex>
                 </Flex>
 
-                <Grid gap={3} w='100%' h={{ md: '100vh', sm: '122vh', lg: '128vh', base: '80vh' }} templateRows='repeat(2,1fr)' templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)']}>
-                    <GridItem rowSpan={2} bgColor='red' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage='https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW39/ActboxTall-Bridal_2x_20220926130913.jpg?imwidth=600&imdensity=1'>
+                <Grid gap={3} w='100%' h={{ md: '100vh', sm: '122vh', lg: '128vh', base: '100vh' }} templateRows='repeat(2,1fr)' templateColumns={['repeat(1,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)', 'repeat(2,1fr)']}>
+                    <GridItem rowSpan={2} bgColor='red' h={['100vh', '100%', '100%', '100%']} w={['100%', '100%', '100%', '100%']} backgroundPosition='center' backgroundSize='cover' backgroundImage='https://img.mytheresa.com/media/static/raw/cms/l/WW_HP_2022_CW39/ActboxTall-Bridal_2x_20220926130913.jpg?imwidth=600&imdensity=1'>
                     </GridItem>
 
                     <GridItem display={['none', 'inline-block', 'inline-block', 'inline-block']}>
