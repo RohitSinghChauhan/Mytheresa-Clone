@@ -25,7 +25,7 @@ const Mens = () => {
             <Flex h={{ lg: '72vh', md: '60vh', sm: '46vh', base: '35vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
                 <Flex width='100%' justifyContent='center' alignItems='center' direction='column'>
                     <Stack spacing={2}>
-                        <Text color='white' textAlign='center' letterSpacing={{ lg: '1', md: '0' }}>UNEARTH YOUR AUTHENTIC STYLE</Text>
+                        <Text color='white' textAlign='center' letterSpacing={{ lg: '1', md: '0' }} fontSize={['.9rem', '1rem', '1rem', '1.6rem']}>UNEARTH YOUR AUTHENTIC STYLE</Text>
                         <Text color='white' fontSize={{ lg: '55', md: '35', sm: '33' }} textAlign='center'>Pre-Fall 2022</Text>
                     </Stack>
                     <Link to='/menproducts'>

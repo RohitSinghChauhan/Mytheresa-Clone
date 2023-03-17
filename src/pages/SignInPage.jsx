@@ -51,9 +51,9 @@ const SignInPage = () => {
     }
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} h='75vh' margin='auto' mt={10} mb={-10}>
+        <Box w={{ lg: '100%', md: '100%', sm: '100%', base: '98%' }} h={['80vh', '75vh', '75vh', '75vh']} margin='auto' mt={10} mb={['10', '10', '8', '-10']}>
             <Flex h='100%' direction='column' justifyContent='center' alignItems='center'>
-                <Stack w={{ lg: '38vw', md: '70vw', sm: '70vw' }} margin='auto' spacing={7}>
+                <Stack w={{ lg: '38vw', md: '70vw', sm: '70vw', base: '90vw' }} margin='auto' spacing={7}>
                     <Stack>
                         <Text>If you have an account with us, please log in.</Text>
                     </Stack>
@@ -72,9 +72,9 @@ const SignInPage = () => {
                     <Text as='u'>Forgot Your Password?</Text>
                 </Stack>
 
-                <Stack w={{ lg: '38vw', md: '70vw', sm: '70vw' }} margin='auto' mt={5} spacing={{ lg: '2', md: '4', sm: '3' }}>
-                    <Button onClick={handleSubmit} borderRadius='0' w={{ lg: '7vw', md: '12vw', sm: '12vw' }} fontSize='0.9rem' bgColor='green.500' colorScheme='green' color='white'>LOGIN</Button>
-                    <Text color='gray'>At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account.
+                <Stack w={{ lg: '38vw', md: '70vw', sm: '70vw', base: '90vw' }} margin='auto' mt={5} spacing={{ lg: '2', md: '4', sm: '3' }}>
+                    <Button onClick={handleSubmit} borderRadius='0' w={{ lg: '7vw', md: '12vw', sm: '12vw', base: '25vw' }} fontSize='0.9rem' bgColor='green.500' colorScheme='green' color='white' mb='1rem'>LOGIN</Button>
+                    <Text color='gray' fontSize={['0.8rem', '0.8rem', '1rem', '1rem']}>At Mytheresa, we keep your information secure. As a result, it will be necessary for you to log in to your account before you are able to place an order or change the information on your account.
                         You will be asked to log in to complete your order even if you have already been greeted on the website.
                     </Text>
                 </Stack>
