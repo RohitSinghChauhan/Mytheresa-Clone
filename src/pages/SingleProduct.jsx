@@ -6,7 +6,7 @@ import { CartContext } from '../context/CartContext/CartContext'
 import { AuthContext } from '../context/AuthContext/AuthContext'
 
 const getSingleData = (params = {}) => {
-    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`, {
+    return axios.get(`https://confused-jade-crown.cyclic.app/products`, {
         params: {
             id: params.id
         }
@@ -48,19 +48,19 @@ const SingleProduct = () => {
     }
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
+        <Box w={{ lg: '75%', md: '80%', sm: '98%', base: '99%' }} margin='auto'>
 
-            <Flex h={{ lg: '80vh', md: '70vh' }} w={{ lg: '100%', md: '100%', sm: '100%' }} margin='auto' justifyContent={{ lg: 'space-between', md: 'space-evenly' }} alignItems='center'>
-                <Box w={{ lg: '50%', md: '42%', sm: '40%' }}>
-                    <Image src={data.image} alt='someimage' />
+            <Flex direction={['column', 'column', 'row', 'row']} h={{ lg: '80vh', md: '80vh', sm: 'auto', base: 'auto' }} w={{ lg: '100%', md: '100%', sm: '100%', base: '90%' }} margin='auto' justifyContent={{ lg: 'space-between', md: 'space-evenly' }} alignItems='center'>
+                <Box>
+                    <Image src={data.image} w={{ lg: '57%', md: '55%', sm: '60%', base: '60%' }} alt='unable to fetch' />
                 </Box>
 
-                <Stack justifyContent='space-between' h={{ lg: '90%', md: '66%', sm: '66%' }} w={{ lg: '50%', md: '50%', sm: '50%' }}>
+                <Stack justifyContent='space-between' h={{ lg: '90%', md: '70%', sm: '66%' }} w={{ lg: '50%', md: '70%', sm: '100%' }}>
                     <Stack>
                         <Text fontSize='2rem'>{data.title}</Text>
                         <Text fontSize='1.5rem'>₹{data.price}</Text>
-                        <Text>VAT exception. VAT not included. Item no. P00652690</Text>
-                        <Text>
+                        <Text fontSize={['.9rem', '.9rem', '1rem', '1rem']}>VAT exception. VAT not included. Item no. P00652690</Text>
+                        <Text fontSize={['.9rem', '.9rem', '1rem', '1rem']}>
                             material: 100% lamb leather
                             trim: 90% cotton, 8% polyamide, 2% elastane
                             filling: 90% down, 10% feathers

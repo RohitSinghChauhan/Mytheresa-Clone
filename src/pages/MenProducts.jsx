@@ -13,7 +13,7 @@ const MenProducts = () => {
         dispatch({ type: 'LOADING', payload: true });
 
         getData({
-            category: 'men'
+            category: 'Mens'
         })
             .then(res => {
                 dispatch({ type: 'LOADING', payload: false })
@@ -40,10 +40,10 @@ const MenProducts = () => {
             }
 
             <Center>
-                <SimpleGrid columns={{ lg: '3', md: '3', sm: '2' }} spacing={{ lg: '9', md: '20', sm: '20' }}>
-                    {data && data.map(item =>
+                <SimpleGrid columns={{ lg: '3', md: '3', sm: '2' }} spacing={{ lg: '12', md: '20', sm: '20' }}>
+                    {data && data.map((item) =>
                         <Flex key={item.id} w='20vw' direction='column' justifyContent='center' alignItems='center'>
-                            <Link to={`/menproducts/${item.id}`} >
+                            <Link to={`/menproducts/${item.id}`}>
                                 <Image src={item.image} alt='someimage' />
                             </Link>
                             <Text>{item.title}</Text>
@@ -52,7 +52,7 @@ const MenProducts = () => {
                     )}
                 </SimpleGrid>
             </Center>
-        </Box >
+        </Box>
     )
 }
 

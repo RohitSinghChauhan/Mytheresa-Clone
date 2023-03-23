@@ -19,7 +19,6 @@ export default function Navbar() {
             title: "KIDS"
         },
         {
-            path: '/life',
             title: "LIFE"
         }
     ]
