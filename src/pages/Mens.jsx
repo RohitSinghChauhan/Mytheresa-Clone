@@ -7,7 +7,7 @@ import MenCarousel2 from '../components/MenCarousel2'
 import axios from 'axios'
 
 const getData = () => {
-    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`);
+    return axios.get(`https://confused-jade-crown.cyclic.app/products`);
 }
 
 const Mens = () => {
@@ -19,10 +19,12 @@ const Mens = () => {
             .catch(err => console.log(err))
     }, [])
 
-    return (
-        <Box w={{ base: '98%', lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
 
-            <Flex h={{ lg: '72vh', md: '60vh', sm: '46vh', base: '35vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
+
+    return (
+        <Box w={['97%', '97%', '90%', '90%']} margin='auto'>
+
+            <Flex h={{ lg: '72vh', md: '60vh', sm: '46vh', base: '30vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/SM_Monetate_Images/14_ActivityBoxes/Fixes/MonclerCover/BIG_DESKTOP_1X_20220928100157.jpg'}>
                 <Flex width='100%' justifyContent='center' alignItems='center' direction='column'>
                     <Stack spacing={2}>
                         <Text color='white' textAlign='center' letterSpacing={{ lg: '1', md: '0' }} fontSize={['.9rem', '1rem', '1rem', '1.6rem']}>UNEARTH YOUR AUTHENTIC STYLE</Text>
@@ -35,8 +37,8 @@ const Mens = () => {
             </Flex>
 
             <Box mt='2rem' mb={12}>
-                <Text color='blackAlpha.800' letterSpacing={1} fontSize={30} mb='3rem' textAlign='center'>New Arrivals</Text>
-                <ProductCarousel products={data} category='men' />
+                <Text color='blackAlpha.800' letterSpacing={1} fontSize={['23', '27', '30', '30']} mb={['1rem', '1rem', '3rem', '3rem']} textAlign='center'>New Arrivals</Text>
+                <ProductCarousel products={data} category='Mens' />
                 <Center>
                     <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={['20vw', '13vw', '10vw', '6vw']} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
@@ -44,7 +46,7 @@ const Mens = () => {
                 </Center>
             </Box>
 
-            <SimpleGrid columns={{ lg: '2', md: '1', sm: '1', base: '1' }} h={['58vh', '60vh', '70vh', '70vh']} w='100%'>
+            <SimpleGrid columns={{ lg: '2', md: '1', sm: '1', base: '1' }} h={['50vh', '60vh', '70vh', '70vh']} w='100%'>
                 <Flex justifyContent='center' alignItems='center' color='white' direction='column' w='100%' backgroundColor='black'>
                     <Stack spacing={4}>
                         <Stack pl={['1rem', '1rem', '0', '0']} spacing={-3} fontSize={['2.3rem', '2.4rem', '3.5rem', '3.5rem']}>
@@ -67,7 +69,7 @@ const Mens = () => {
             </SimpleGrid>
 
             <Box mt='2rem' mb={12} pt={5}>
-                <MenCarousel2 products={data} category='men' />
+                <MenCarousel2 products={data} category='Mens' />
                 <Center>
                     <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '13vw', base: '20vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' mb={['1.3rem', '1.3rem', 'none', 'none']}>VIEW ALL</Button>
@@ -96,8 +98,8 @@ const Mens = () => {
                 </Flex>
             </SimpleGrid>
 
-            <Box mt='2rem' mb={12} pt={5}>
-                <MenCarousel2 products={data} category='men' />
+            <Box display={['none', 'inline-block', 'inline-block', 'inline-block']} mt='2rem' mb={12} pt={5}>
+                <MenCarousel2 products={data} category='Mens' />
                 <Center>
                     <Link to='/menproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: '13vw', base: '20vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem' mb={['1.3rem', '1.3rem', 'none', 'none']}>VIEW ALL</Button>

@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 const getData = () => {
-    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`);
+    return axios.get(`https://confused-jade-crown.cyclic.app/products`);
 }
 
 const Kids = () => {
@@ -69,7 +69,7 @@ const Kids = () => {
 
             <Box mt={['1.8rem', '2rem', '2rem', '2rem']} mb={12}>
                 <Text color='blackAlpha.800' fontSize={25} mb='1rem' textAlign='center'>NEW ARRIVALS</Text>
-                <ProductCarousel products={data} category='kids' />
+                <ProductCarousel products={data} category='Child' />
                 <Center>
                     <Link to='/kidsproducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '8vw', md: '10vw', sm: '16vw' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>

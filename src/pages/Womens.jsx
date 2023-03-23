@@ -5,7 +5,7 @@ import ProductCarousel from '../components/ProductCarousel'
 import axios from 'axios'
 
 const getData = () => {
-    return axios.get(`https://lazy-blue-panda-gear.cyclic.app/products`);
+    return axios.get(`https://confused-jade-crown.cyclic.app/products`);
 }
 
 const Womens = () => {
@@ -18,7 +18,7 @@ const Womens = () => {
     }, [])
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto'>
+        <Box w={['97%', '98%', '94%', '90%']} margin='auto'>
             <Link to='/womenproducts'>
                 <Flex h={{ base: '34vh', lg: '71vh', md: '48vh', sm: '48vh' }} pb={10} justifyContent='flex-end' direction='column' alignItems='center' w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/WW_Moncler_Bigs/Moncler_MayaJacket_Act_Big_desktop_1_x2_20220928145617.jpg?imwidth=1180&imdensity=1'}>
                 </Flex>
@@ -87,13 +87,13 @@ const Womens = () => {
                 </Flex>
             </Box>
 
-            <Box display={{ base: 'none' }} mt={{ lg: '2rem', md: '1rem', sm: '1rem' }} mb={12} pt={5}>
+            <Box mt={{ lg: '2rem', md: '1rem', sm: '1rem' }} mb={12} pt={5}>
                 <Stack spacing={{ lg: '1', md: '0', sm: '0' }} margin='auto' justifyContent='center' alignItems='center' width='40vw'>
                     <Text fontSize='0.9rem'>A MUTED MOMENT</Text>
                     <Text fontSize={{ lg: '2.1rem', md: '1.2rem', sm: '1.5rem' }} textAlign='center'>Pieces to wear with everything, everywhere</Text>
                 </Stack>
                 <Box mb={{ lg: '2.3rem', md: '0.8rem', sm: '0.8rem' }}></Box>
-                <ProductCarousel products={data} category='women' />
+                <ProductCarousel products={data} category='Womens' />
                 <Center>
                     <Link to='/womenProducts'>
                         <Button colorScheme='blackAlpha' maxW={{ lg: '7vw', md: '10vw', sm: '14vw', base: '47vw' }} h={8} fontSize={{ lg: '13', md: '11', sm: '8' }} bgColor='blackAlpha.800' borderRadius='none' color='white'>SHOP NOW</Button>
