@@ -24,12 +24,15 @@ export default function MenuMd() {
                     <MenuItem><Link to='/mens'>Men</Link></MenuItem>
                     <MenuItem><Link to='/womens'>Women</Link></MenuItem>
                     <MenuItem><Link to='/kids'>Kids</Link></MenuItem>
-                    <MenuItem><Link to='/life'>Life</Link></MenuItem>
                 </MenuGroup>
                 <MenuDivider />
                 <MenuGroup title='Account'>
-                    <MenuItem>My Account</MenuItem>
-                    <MenuItem>My Wishlist</MenuItem>
+                    <MenuItem>
+                        <Link to='/login'>My Account</Link>
+                    </MenuItem>
+                    <MenuItem>
+                        <Link to='/signUpPage'>Sign Up</Link>
+                    </MenuItem>
                 </MenuGroup>
             </MenuList>
         </Menu>

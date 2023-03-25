@@ -6,7 +6,7 @@ export default function PrivateRoute({ children }) {
     const { state } = useContext(AuthContext);
 
     if (!state.isAuth) {
-        return <Navigate to='/signinpage' />
+        return <Navigate to='/signuppage' />
     }
 
     return children;

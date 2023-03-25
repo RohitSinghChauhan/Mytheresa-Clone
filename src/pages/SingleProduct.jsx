@@ -31,7 +31,7 @@ const SingleProduct = () => {
 
     const handleAddItem = () => {
         if (!state.isAuth) {
-            navigate('/signinpage');
+            navigate('/signuppage');
         }
         else {
             dispatch({ type: 'ADD_TO_CART', payload: data })

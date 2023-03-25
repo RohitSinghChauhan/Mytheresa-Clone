@@ -18,7 +18,7 @@ const Home = () => {
     }, [])
 
     return (
-        <Box w={['97%', '97%', '90%', '90%']} margin='auto'>
+        <Box w={['97%', '97%', '90%', '84%']} margin='auto'>
             <Stack spacing={['1', '1', '8', '8']} >
                 <Flex h={{ base: '27vh', lg: '78vh', md: '70vh', sm: '40vh' }} w='100%' backgroundPosition='center' backgroundSize='cover' backgroundImage={'https://img.mytheresa.com/media/static/raw/cms/l/Gate_page_upload_September_2022/Gatepage_Sep22_TAB_2x_20220908102602.jpg?imwidth=1024&imdensity=1'}>
                     <Flex width='50%' justifyContent='center' alignItems='center'>

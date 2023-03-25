@@ -30,9 +30,9 @@ export default function Navbar() {
                     <Flex gap='1.2rem' fontSize='0.9rem'>
                         {
                             links.map(link =>
-                                <NavLink className={({ isActive }) =>
+                                <NavLink key={link.title} className={({ isActive }) =>
                                     isActive ? styles.linkActive : styles.linkDefault
-                                } key={link.path} to={link.path}>
+                                } to={link.path}>
                                     {link.title}
                                 </NavLink>
                             )
@@ -40,12 +40,11 @@ export default function Navbar() {
                     </Flex>
 
                     <Flex fontSize='0.75rem' as='b' color='blackAlpha.700' gap='3.5rem'>
-                        <Text letterSpacing={1} cursor='pointer'>Signup for Newsletter</Text>
-                        <Link to='/signinpage'>
+                        <Link to='/login'>
                             <Text letterSpacing={1} cursor='pointer'>My account</Text>
                         </Link>
-                        <Link to='/signinpage'>
-                            <Text letterSpacing={1} cursor='pointer'>Sign In</Text>
+                        <Link to='/signuppage'>
+                            <Text letterSpacing={1} cursor='pointer'>Sign Up</Text>
                         </Link>
                     </Flex>
                 </Flex>

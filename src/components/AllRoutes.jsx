@@ -4,15 +4,15 @@ import Home from '../pages/Home';
 import Mens from '../pages/Mens';
 import Womens from '../pages/Womens';
 import Kids from '../pages/Kids';
-import Life from '../pages/Life';
 import InvalidPage from '../pages/InvalidPage';
 import MenProducts from '../pages/MenProducts';
 import WomenProducts from '../pages/WomenProducts';
 import KidsProducts from '../pages/KidsProducts';
 import SingleProduct from '../pages/SingleProduct';
 import ShoppingCart from '../pages/ShoppingCart';
-import SignInPage from '../pages/SignInPage';
+import SignUpPage from '../pages/SignUpPage';
 import PrivateRoute from './PrivateRoute';
+import Login from '../pages/Login';
 
 const AllRoutes = () => {
     return (
@@ -30,7 +30,8 @@ const AllRoutes = () => {
                 <Route path='/womenproducts/:id' element={<SingleProduct />} />
                 <Route path='/kidsproducts/:id' element={<SingleProduct />} />
                 <Route path='/shoppingcart' element={<PrivateRoute><ShoppingCart /></PrivateRoute>} />
-                <Route path='/signinpage' element={<SignInPage />} />
+                <Route path='/signuppage' element={<SignUpPage />} />
+                <Route path='/login' element={<Login />} />
                 <Route path='*' element={<InvalidPage />} />
             </Routes>
         </>
