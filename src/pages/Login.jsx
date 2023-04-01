@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context/AuthContext/AuthContext'
 
 const postData = (formData = {}) => {
-    return axios.post(`https://gray-adventurous-cow.cyclic.app/user/signup`, formData);
+    return axios.post(`https://gray-adventurous-cow.cyclic.app/user/login`, formData);
 }
 
 const initState = {
@@ -39,8 +39,13 @@ const Login = () => {
     const handleSubmit = () => {
         postData(state)
             .then(res => {
-                navigate('/')
-                authDispatcher({ type: 'SUCCESS' })
+                if (res.data.token) {
+                    navigate('/')
+                    authDispatcher({ type: 'SUCCESS' })
+                }
+                else {
+                    alert('Incorrect credentials!');
+                }
             })
             .catch(err => console.log(err));
 
