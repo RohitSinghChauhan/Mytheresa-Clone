@@ -30,7 +30,7 @@ const KidsProducts = () => {
     }, [])
 
     return (
-        <Box w={{ lg: '75%', md: '100%', sm: '100%' }} margin='auto' mt={-5}>
+        <Box w={{ base: '100%', lg: '75%', md: '100%', sm: '100%' }} margin='auto' mt={-5}>
             <AllProductsLayout />
 
             {state.isLoading &&
@@ -40,7 +40,7 @@ const KidsProducts = () => {
             }
 
             <Center>
-                <SimpleGrid columns={{ lg: '3', md: '3', sm: '2' }} spacing={{ lg: '9', md: '20', sm: '20' }}>
+                <SimpleGrid columns={{ base: '2', lg: '3', md: '3', sm: '2' }} spacing={{ base: '50', lg: '9', md: '20', sm: '20' }}>
                     {data && data.map((item) =>
                         <Flex key={item.id} w='20vw' direction='column' justifyContent='center' alignItems='center'>
                             <Link to={`/kidsproducts/${item.id}`}>

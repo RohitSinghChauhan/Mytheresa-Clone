@@ -40,7 +40,7 @@ const MenProducts = () => {
             }
 
             <Center>
-                <SimpleGrid columns={{ lg: '3', md: '3', sm: '2' }} spacing={{ lg: '12', md: '20', sm: '20' }}>
+                <SimpleGrid columns={{ base: '2', lg: '3', md: '3', sm: '2' }} spacing={{ base: '50', lg: '9', md: '20', sm: '20' }}>
                     {data && data.map((item) =>
                         <Flex key={item.id} w='20vw' direction='column' justifyContent='center' alignItems='center'>
                             <Link to={`/menproducts/${item.id}`}>

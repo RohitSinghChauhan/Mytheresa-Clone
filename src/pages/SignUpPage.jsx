@@ -37,14 +37,20 @@ const SignUpPage = () => {
     }
 
     const handleSubmit = () => {
-        postData(state)
-            .then(res => {
-                navigate('/')
-                authDispatcher({ type: 'SUCCESS' })
-            })
-            .catch(err => console.log(err));
+        if (!state.email || !state.password) {
+            alert('Fields should not be empty!');
+        } else {
 
-        dispatch({ type: 'RESET_TO_INITSTATE' })
+            postData(state)
+                .then(res => {
+                    navigate('/')
+                    authDispatcher({ type: 'SUCCESS' })
+                })
+                .catch(err => console.log(err));
+
+            dispatch({ type: 'RESET_TO_INITSTATE' });
+
+        }
     }
 
     return (
