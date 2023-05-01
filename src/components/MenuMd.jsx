@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 export default function MenuMd() {
     return (<>
-        <Menu>
+        <Menu width='2rem'>
             <MenuButton
                 as={IconButton}
                 aria-label='Options'

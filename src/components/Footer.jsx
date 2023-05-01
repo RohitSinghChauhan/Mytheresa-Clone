@@ -84,7 +84,7 @@ function Footer() {
         <Divider mt={{ base: '1rem', lg: '7', md: '3', sm: '3' }} mb={1} />
 
         <Flex w='100%' fontFamily='monospace' fontSize={['.5rem', '.9rem', '.9rem', '1efrem']} justifyContent={['space-around', 'space-around', 'space-around', 'space-around']} alignItems='center'>
-            <Text color='black'>copyright © 2006-2022 mytheresa.com</Text>
+            <Text color='black'>Copyright © 2006-2022 mytheresa.com</Text>
             <Flex gap={{ base: '1', lg: '4', md: '3', sm: '3' }} color='black'>
                 <Text>Terms of use</Text>
                 <Text>Privacy policy</Text>

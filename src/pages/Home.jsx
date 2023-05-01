@@ -48,7 +48,7 @@ const Home = () => {
                     <ProductCarousel products={data} category='Womens' />
                     <Flex w='100%' justify='center' alignItems='center'>
                         <Link to='/womenproducts'>
-                            <Button colorScheme='blackAlpha' w={{ lg: '6vw', md: '10vw', sm: 'auto', base: 'auto' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
+                            <Button colorScheme='blackAlpha' w={{ lg: '6vw', md: '10vw', sm: '4rem', base: '3rem' }} h={8} fontSize={['8', '10', '13', '13']} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
                         </Link>
                     </Flex>
                 </Box>
@@ -58,7 +58,7 @@ const Home = () => {
                     <ProductCarousel products={data} category='Mens' />
                     <Center>
                         <Link to='/menproducts'>
-                            <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: 'auto', base: 'auto' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
+                            <Button colorScheme='blackAlpha' w={{ lg: '6vw', md: '10vw', sm: '4rem', base: '3rem' }} h={8} fontSize={['8', '10', '13', '13']} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
                         </Link>
                     </Center>
                 </Box>
@@ -68,7 +68,7 @@ const Home = () => {
                     <ProductCarousel products={data} category='Child' />
                     <Center>
                         <Link to='/kidsproducts'>
-                            <Button colorScheme='blackAlpha' maxW={{ lg: '6vw', md: '10vw', sm: 'auto', base: 'auto' }} h={8} fontSize={13} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
+                            <Button colorScheme='blackAlpha' w={{ lg: '6vw', md: '10vw', sm: '4rem', base: '3rem' }} h={8} fontSize={['8', '10', '13', '13']} bgColor='blackAlpha.800' borderRadius='none' color='white' mt='1.6rem'>VIEW ALL</Button>
                         </Link>
                     </Center>
                 </Box>
