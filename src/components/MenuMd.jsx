@@ -21,7 +21,7 @@ export default function MenuMd() {
             />
             <MenuList>
                 <MenuGroup title='Links'>
-                    <MenuItem><Link to='/mens'>Men</Link></MenuItem>
+                    <Link to='/mens'><MenuItem>Men</MenuItem></Link>
                     <MenuItem><Link to='/womens'>Women</Link></MenuItem>
                     <MenuItem><Link to='/kids'>Kids</Link></MenuItem>
                 </MenuGroup>
